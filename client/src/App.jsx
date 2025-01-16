@@ -8,18 +8,21 @@ import Signup from './pages/Signup';
 import Projects from './pages/Projects';
 import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
+import Header from './componenet/Header';
 
 
 export default function App() {
   return (
     <BrowserRouter>
+    <Header/>
      <Routes>
      <Route path='/home' element={<Home/>}/>
       <Route path='/about' element={<About />} />
-      <Route path='/signin' element={<Signin />}/>
+      <Route path='/sign-in' element={<Signin />}/>
       <Route path='/signup' element={<Signup />}/>
       <Route path='/projects' element={<Projects />}/>
       <Route path='/dashboard' element={<Dashboard />}/>
+      <Route path="*" element={<Home />} />
      </Routes>
     </BrowserRouter>
   )
