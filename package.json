@@ -1,8 +1,10 @@
 {
   "dependencies": {
     "@headlessui/react": "^2.2.0",
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "flowbite-react": "^0.10.2",
+    "mongoose": "^8.9.5",
     "nodemon": "^3.1.9",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -13,8 +15,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev":"nodemon api/index.js",
-    "start":"node api/index.js"
+    "dev": "nodemon api/index.js",
+    "start": "node api/index.js"
   },
   "keywords": [],
   "author": "",
